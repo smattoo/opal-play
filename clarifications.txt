@@ -1,0 +1,7 @@
+which broadcast channel to use for scaling OPAL server?
+    Postgres LISTEN/NOTIFY
+    Redis
+    Kafka
+
+security considerations on OPAL/OPA infra.
+

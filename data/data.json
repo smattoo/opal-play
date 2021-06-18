@@ -1,0 +1,57 @@
+{
+    "user_roles": [
+            {
+                "role": "contributor",
+                "service_id": "service12"
+            },
+            { 
+                "role": "owner",
+                "service_id": "service124"
+            },
+            {
+                "role": "reader",
+                "service_id": "service13" 
+            }    		
+    ],
+    "role_grants": {
+        "reader": [
+            {
+                "action": "read",
+                "type": "service"
+            }
+        ],
+        "contributor": [
+            {
+                "action": "read",
+                "type": "service"
+            },
+            {
+                "action": "write",
+                "type": "service"
+            }
+        ],
+        "owner": [
+               {
+                "action": "read",
+                "type": "service"
+            },
+            {
+                "action": "write",
+                "type": "service"
+            },
+            {
+                "action": "delete",
+                "type": "service"
+            }
+        ]
+    },
+"service_hierarchy": {
+    "service1": {},
+    "service12": { "parent": "service1"},
+    "service13": { "parent": "service1"},
+    "service124": { "parent": "service12"},
+    "service125": { "parent": "service12"},
+    "service1247": { "parent": "service124"},
+    "service136": { "parent": "service13"}
+}
+}
